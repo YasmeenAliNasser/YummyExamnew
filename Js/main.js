@@ -184,7 +184,7 @@ async function searchByName(name) {
 
 function displaysearch(array) {
   let cartona = "";
-  for (let i = 0; i < array.length; i++) {
+  for (let i = 0; i < 20; i++) {
     cartona += `
       <div class="col gap-4 g-4" data-id="${array[i].idMeal}">
         <div class="imglayer">
@@ -207,6 +207,7 @@ function showSearch() {
     OneAreaPage.classList.add("d-none");
     AllIngredients.classList.add("d-none");
     OneIngredientPage.classList.add("d-none");
+    ContactPage.classList.add("d-none");
 
     Seachpage.classList.remove("d-none");
     searchInput.addEventListener("input", function () {
@@ -244,6 +245,7 @@ function showSearchbyLetter() {
     OneAreaPage.classList.add("d-none");
     AllIngredients.classList.add("d-none");
     OneIngredientPage.classList.add("d-none");
+     ContactPage.classList.add("d-none");
 
     Seachpage.classList.remove("d-none");
     searchInputbyletter.addEventListener("input", function () {
@@ -291,6 +293,7 @@ function showCategory() {
     OneAreaPage.classList.add("d-none");
     AllIngredients.classList.add("d-none");
     OneIngredientPage.classList.add("d-none");
+     ContactPage.classList.add("d-none");
 
     Categorypage.classList.remove("d-none");
      getAllCategories()
@@ -337,6 +340,7 @@ function showCategoryOne() {
       const categoryName = card.dataset.id;
       Categorypage.classList.add("d-none");
       OneCategory.classList.remove("d-none");
+       ContactPage.classList.add("d-none");
       getOneCategory(categoryName);
     }
   });
@@ -395,6 +399,7 @@ function showAllAreas() {
     OneCategory.classList.add("d-none");
     AllIngredients.classList.add("d-none");
     OneIngredientPage.classList.add("d-none");
+     ContactPage.classList.add("d-none");
     // AllAreaspage.classList.add("d-none");
 
     AllAreaspage.classList.remove("d-none");
@@ -441,6 +446,7 @@ function showOneArea() {
       const areaName = card.dataset.id;
       AllAreaspage.classList.add("d-none");
       OneAreaPage.classList.remove("d-none");
+       ContactPage.classList.add("d-none");
       getOneArea(areaName);
     }
   });
@@ -480,7 +486,8 @@ function showAllIngredients() {
     Categorypage.classList.add("d-none");
     OneCategory.classList.add("d-none");
     AllAreaspage.classList.add("d-none");
-    OneAreaPage.classList.add("d-none");             
+    OneAreaPage.classList.add("d-none"); 
+     ContactPage.classList.add("d-none");            
     
     
     AllIngredients.classList.remove("d-none");
@@ -529,6 +536,7 @@ function showOnengredient() {
       const ingName = card.dataset.id.trim();
       AllIngredients.classList.add("d-none");
       OneIngredientPage.classList.remove("d-none");
+       ContactPage.classList.add("d-none");
       getOneIngredient(ingName);
     }
   });
@@ -549,6 +557,7 @@ function showContact() {
     OneAreaPage.classList.add("d-none");
      AllIngredients.classList.add("d-none");
     OneIngredientPage.classList.add("d-none");
+    
 
 
 
