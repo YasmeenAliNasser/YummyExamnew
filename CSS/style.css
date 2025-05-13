@@ -1,0 +1,224 @@
+ 
+a {
+    text-decoration: none ;
+    color: white;
+    font-weight: 200;
+}
+i{
+    cursor: pointer;
+}
+a:hover{
+       color: white;
+      font-weight: 300;
+}
+img{
+     border-radius: 3%;
+}
+.sidebar{
+    /* width: 100%; */
+    position: absolute;
+    z-index: 2;
+}
+
+body{
+    background-color: #000;
+}
+ .links{
+    text-decoration: none;
+ }
+ .links li{
+    cursor: pointer;
+ }
+ .inner{
+    flex: 6; 
+    max-width: 250px;
+    background-color: #000;
+
+ }
+ .outer{
+   flex: 1;
+   max-width: 80px;
+ }
+
+ .sidebar  .menu {
+    font-size: 40px;
+     color: #000;
+ }
+ .outer i{
+     color: #000;
+   
+ }
+   .imglayer{
+    position: relative;
+    overflow: hidden;
+   border-radius: 3%;
+    
+
+ }
+  
+
+ .imglayer .layer {
+   background-color: rgba(255, 255, 255, 0.867);
+   position: absolute;
+   top: 100%;
+   left: 0;
+   height: 100%;
+   width: 100%;
+    font-size: 28px;
+    font-weight:500 ;
+    line-height: 34px;
+   transition: all 0.5s;
+    display: flex;
+  align-items: center;  
+  justify-content: flex-start;  
+   
+    
+ }
+  
+ .imglayer:hover .layer {
+    top: 0;
+ }
+
+ .badgeee{
+    background-color: #CFF4FC;
+    color: rgb(5, 81, 96);
+    font-size: 16px;
+    line-height:24px ;
+    font-weight: 400;
+ }
+
+ .animate__animated.animate__bounceInUp {
+  --animate-duration: 2s;
+}
+
+.loader {
+  color: #fff;
+  font-size: 10px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999em;
+  animation: mulShdSpin 1.3s infinite linear;
+  transform: translateZ(0);
+   
+}
+
+@keyframes mulShdSpin {
+  0%,
+  100% {
+    box-shadow: 0 -3em 0 0.2em, 
+    2em -2em 0 0em, 3em 0 0 -1em, 
+    2em 2em 0 -1em, 0 3em 0 -1em, 
+    -2em 2em 0 -1em, -3em 0 0 -1em, 
+    -2em -2em 0 0;
+  }
+  12.5% {
+    box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 
+    3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, 
+    -2em 2em 0 -1em, -3em 0 0 -1em, 
+    -2em -2em 0 -1em;
+  }
+  25% {
+    box-shadow: 0 -3em 0 -0.5em, 
+    2em -2em 0 0, 3em 0 0 0.2em, 
+    2em 2em 0 0, 0 3em 0 -1em, 
+    -2em 2em 0 -1em, -3em 0 0 -1em, 
+    -2em -2em 0 -1em;
+  }
+  37.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+     3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, 
+     -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  50% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+     3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, 
+     -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  62.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+     3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, 
+     -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+  }
+  75% {
+    box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 
+    3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, 
+    -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 
+    3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, 
+    -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+  }
+}
+
+.sea ,.sea:focus
+{
+  background-color: black;
+  /* width: 80%; */
+  cursor: white;
+  color: white;
+}
+.sea {
+  min-height: 40px; /* تحديد الحد الأدنى للارتفاع */
+  min-width: 300px;
+}
+.layer h3{
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 38px;
+}
+
+.layer span{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.Categorypagee i{
+  font-size: 80px;
+}
+
+.row{
+  margin-top: -30px;
+}
+
+
+ #ContactPage {
+    width: 80%; 
+    margin: 0 auto;  
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+#rowccontact {
+  height: 100%;
+    justify-content: center; 
+    align-items: center;
+}
+.tagbade{
+  background-color: #F8D7DA;
+    color:red;
+    font-size: 16px;
+    line-height:24px ;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
